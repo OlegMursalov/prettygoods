@@ -117,8 +117,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -127,62 +125,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bootstrap.min.js" />
-    <Content Include="Content\carousel.css" />
-    <Content Include="Content\css\_navbar.css" />
-    <None Include="Content\css\_transitions.scss" />
-    <Content Include="Content\favicon.ico" />
-    <Content Include="Content\holder.min.js" />
-    <Content Include="Content\images\0Js3kaZkUv0.jpg" />
-    <Content Include="Content\images\23.png" />
-    <Content Include="Content\images\2MS0tyiOqak.jpg" />
-    <Content Include="Content\images\3ufI_nhg410.jpg" />
-    <Content Include="Content\images\5nmqE5y_lJk.jpg" />
-    <Content Include="Content\images\CWDxUXM5Omg.jpg" />
-    <Content Include="Content\images\FijyPByyfGU.jpg" />
-    <Content Include="Content\images\GyCqtob5o4k.jpg" />
-    <Content Include="Content\images\I8NeE9YcTqk.jpg" />
-    <Content Include="Content\images\item-slider-2.jpg" />
-    <Content Include="Content\images\JQUpBiYBaSk.jpg" />
-    <Content Include="Content\images\lIiw8gzjvbw.jpg" />
-    <Content Include="Content\images\LiyJCU8gz9o.jpg" />
-    <Content Include="Content\images\lve3mChUQwo %281%29.jpg" />
-    <Content Include="Content\images\lve3mChUQwo.jpg" />
-    <Content Include="Content\images\L_v0HHcz47Q.jpg" />
-    <Content Include="Content\images\OwPDZC2BUmc.jpg" />
-    <Content Include="Content\images\wyE5O_kC2uM %281%29.jpg" />
-    <Content Include="Content\images\wyE5O_kC2uM.jpg" />
-    <Content Include="Content\images\Zgfe_j2Cppc.jpg" />
-    <Content Include="Content\images\_dAHQi19hic.jpg" />
-    <Content Include="Content\jquery-3.2.1.slim.min.js" />
-    <Content Include="Content\popper.min.js" />
-    <None Include="Content\css\_buttons.scss" />
-    <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\css\_carousel.scss" />
-    <Content Include="Content\css\_spacing.scss" />
-    <Content Include="Content\css\_reboot.scss" />
-    <Content Include="Content\css\_root.scss" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -200,20 +146,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
