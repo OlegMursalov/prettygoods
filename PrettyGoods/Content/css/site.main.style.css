@@ -1,0 +1,10 @@
+﻿section {
+    background: linear-gradient(360deg, rgba(248,249,250,1) 40%, #6c757d 100%);
+    border-radius: 0!important;
+}
+.album {
+    background: linear-gradient(180deg, rgba(248,249,250,1) 0%, #6c757d 100%)
+}
+.text-muted-red {
+    color: #B22222;
+}
