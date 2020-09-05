@@ -5,10 +5,14 @@
             <div class="col-md-12" style="color: #212529;">
                 <h4 style="color: green; background: white;">Небольшой тЭстик-пЭстик</h4>
                 <form method="post" action="test">
+                    @{ 
+                        var i = 0;
+                    }
                     @foreach (var question in Model)
                     {
+                        i++;
                         <div class="col-md-4" style="background: rgb(255, 190, 172); border: solid 3px rgb(161, 75, 148); margin-bottom: 20px;">
-                            <h6>@question.Title</h6>
+                            <h6>@(i) - @(question.Title)</h6>
                             <ul style="list-style: none; padding: 0;">
                                 @foreach (var answer in question.AllAswers)
                                 {
