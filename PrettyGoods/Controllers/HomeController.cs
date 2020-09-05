@@ -233,9 +233,53 @@ namespace PrettyGoods.Controllers
         }
 
         [HttpPost]
-        public ActionResult Test(object obj)
+        public ActionResult Test(int? question_1, int? question_2, 
+            int? question_3, int? question_4, int? question_5, 
+            int? question_6, int? question_7, int? question_8, int? question_9,
+            int? question_10, int? question_11, int? question_12, int? question_13, 
+            int? question_14, int? question_15)
         {
-            return View("Test", allQuestions);
+            var userAnswers = new int?[15] 
+            {
+                question_1,
+                question_2,
+                question_3,
+                question_4,
+                question_5,
+                question_6,
+                question_7,
+                question_8,
+                question_9,
+                question_10,
+                question_11,
+                question_12,
+                question_13,
+                question_14,
+                question_15
+            };
+
+            int i = 0;
+            foreach (var item in allQuestions)
+            {
+                var userAnswer = userAnswers[i];
+                if (userAnswer != null)
+                {
+                    if (userAnswer == item.RightAnswer)
+                    {
+                        i++;
+                    }
+                    else
+                    {
+                        return View("Test", allQuestions);
+                    }
+                }
+                else
+                {
+                    return View("Test", allQuestions);
+                }
+            }
+
+            return View("Win");
         }
 
         public ActionResult About()
