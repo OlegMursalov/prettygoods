@@ -3,15 +3,15 @@
     <div class="container" style="padding: 0; background-image: url('/Content/images/heart (3).png')">
         <div class="row">
             <div class="col-md-12" style="color: #212529;">
-                <h4 style="color: green; background: white;">Небольшой тЭстик-пЭстик</h4>
+                <h4 style="color: deeppink; background: white;">Небольшой тЭстик-пЭстик</h4>
                 <form method="post" action="test">
-                    @{ 
+                    @{
                         var i = 0;
                     }
                     @foreach (var question in Model)
                     {
                         i++;
-                        <div class="col-md-4" style="background: rgb(255, 190, 172); border: solid 3px rgb(161, 75, 148); margin-bottom: 20px;">
+                        <div class="col-md-6" style="background: rgb(255, 190, 172); border: solid 3px rgb(161, 75, 148); margin-bottom: 40px;">
                             <h6>@(i) - @(question.Title)</h6>
                             <ul style="list-style: none; padding: 0;">
                                 @foreach (var answer in question.AllAswers)
