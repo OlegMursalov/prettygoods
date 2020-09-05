@@ -232,6 +232,12 @@ namespace PrettyGoods.Controllers
             return View("Test", allQuestions);
         }
 
+        [HttpPost]
+        public ActionResult Test(object obj)
+        {
+            return View("Test", allQuestions);
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
