@@ -1,9 +1,10 @@
-﻿<div class="album py-5 bg-light" style="position: relative;">
+﻿@model IEnumerable<PrettyGoods.Controllers.Question>
+<div class="album py-5 bg-light" style="position: relative;">
     <div class="container">
 
         <div class="row">
             <div class="col-md-12" style="color: #212529;"><h4>Каталог товаров</h4></div>
-            @for (int i = 0; i < 10; i++)
+            @foreach (var question in Model)
             {
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">

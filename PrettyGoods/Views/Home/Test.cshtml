@@ -1,0 +1,23 @@
+﻿@model IEnumerable<PrettyGoods.Controllers.Question>
+<div class="album py-5 bg-light" style="position: relative;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="color: #212529;"><h4 style="color: green;">Небольшой тЭстик-пЭстик</h4></div>
+            @foreach (var question in Model)
+            {
+                <div class="col-md-4">
+                    <h6>@question.Title</h6>
+                    <ul style="list-style: none; padding: 0;">
+                        @foreach (var answer in question.AllAswers)
+                        {
+                            <li>
+                                <input type="radio" id="question_@(question.Id)_answer_@(answer.Key)" name="question_@(question.Id)" value="@(answer.Key)">
+                                <label for="question_@(question.Id)_answer_@(answer.Key)">@answer.Value</label>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            }
+        </div>
+    </div>
+</div>
