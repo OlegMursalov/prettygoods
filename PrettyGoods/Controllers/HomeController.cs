@@ -144,7 +144,7 @@ namespace PrettyGoods.Controllers
             new Question
             {
                 Id = 10,
-                Title = "Чего oleg mursalov не делал/не имел?",
+                Title = "Чего oleg mursalov НЕ делал/НЕ имел?",
                 RightAnswer = 4,
                 AllAswers = new Dictionary<int, string>
                 {
@@ -158,7 +158,7 @@ namespace PrettyGoods.Controllers
             new Question
             {
                 Id = 11,
-                Title = "Почему oleg mursalov не купит маме акр на Рублёвке?",
+                Title = "Почему oleg mursalov НЕ купит маме акр на Рублёвке?",
                 RightAnswer = 5,
                 AllAswers = new Dictionary<int, string>
                 {
@@ -168,9 +168,65 @@ namespace PrettyGoods.Controllers
                     { 4, "потому что ему это не нужно" },
                     { 5, "потому что он не ген директор ВТБ" }
                 }
+            },
+            new Question
+            {
+                Id = 12,
+                Title = "Где живёт oleg (на самом деле)?",
+                RightAnswer = 2,
+                AllAswers = new Dictionary<int, string>
+                {
+                    { 1, "мск" },
+                    { 2, "Тула" },
+                    { 3, "Прага" },
+                    { 4, "LA" },
+                    { 5, "Омск" }
+                }
+            },
+            new Question
+            {
+                Id = 13,
+                Title = "Сколько почек у oleg'а? (вопрос с двойным подвохом)",
+                RightAnswer = 3,
+                AllAswers = new Dictionary<int, string>
+                {
+                    { 1, "много" },
+                    { 2, "одна" },
+                    { 3, "две почки, две" },
+                    { 4, "три" },
+                    { 5, "он болен, поэтому шесть" }
+                }
+            },
+            new Question
+            {
+                Id = 14,
+                Title = "Город, где oleg написал текст (lyrics) для трэчка 'Wake up'",
+                RightAnswer = 1,
+                AllAswers = new Dictionary<int, string>
+                {
+                    { 1, "Анапа" },
+                    { 2, "Геленджик" },
+                    { 3, "Сочи" },
+                    { 4, "Стамбул" },
+                    { 5, "Америка, Ю эс эй" }
+                }
+            },
+            new Question
+            {
+                Id = 15,
+                Title = "Есть человек, который мелькал (был подписчиком, может, и сейчас есть) в группе oleg'а mursalov'а, oleg предлагал этому человеку фит (не рэперу). Кто этот человек?",
+                RightAnswer = 3,
+                AllAswers = new Dictionary<int, string>
+                {
+                    { 1, "Кирилл Николаев" },
+                    { 2, "Булат Теликов" },
+                    { 3, "Камиль Пивоваров" },
+                    { 4, "Артём Мирный" },
+                    { 5, "Маша полянска aka Миша Воларь" }
+                }
             }
         };
-
+        
         public ActionResult Test()
         {
             return View("Test", allQuestions);
