@@ -13,6 +13,8 @@ namespace PrettyGoods.Controllers
 
     public class HomeController : Controller
     {
+        private const string Code = "234673456238945234590";
+
         public readonly List<Question> allQuestions = new List<Question>
         {
             new Question
@@ -279,7 +281,7 @@ namespace PrettyGoods.Controllers
                 }
             }
 
-            return View("Win");
+            return View("Win", model: Code);
         }
 
         public ActionResult About()
