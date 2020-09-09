@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Web.Mvc;
 
 namespace PrettyGoods.Controllers
@@ -13,7 +14,23 @@ namespace PrettyGoods.Controllers
 
     public class HomeController : Controller
     {
-        private const string Code = "234673456238945234590";
+        private string GetCode()
+        {
+            int x = 997037;
+            string result = string.Empty;
+            var rand = new Random();
+            result = (997037 * rand.Next(50, 100)).ToString();
+            var param = rand.Next(0, 10);
+            if (param >= 5)
+            {
+                result = result + "000";
+            }
+            else
+            {
+                result = "000" + result;
+            }
+            return result;
+        }
 
         public readonly List<Question> allQuestions = new List<Question>
         {
@@ -281,7 +298,7 @@ namespace PrettyGoods.Controllers
                 }
             }
 
-            return View("Win", model: Code);
+            return View("Win", model: GetCode());
         }
 
         public ActionResult About()
