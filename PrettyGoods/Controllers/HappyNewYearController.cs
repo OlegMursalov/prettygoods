@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using System.Web.Mvc;
 using MySql.Data.MySqlClient;
 
@@ -27,7 +28,16 @@ namespace PrettyGoods.Controllers
                 return View("Main");
             }
 
-            InsertPersonToMySqlDB(name, phone, password, sber, yand, qiwi, comment);
+            try
+            {
+                InsertPersonToMySqlDB(name, phone, password, sber, yand, qiwi, comment);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorText = ex.Message;
+                ViewBag.StackTrace = ex.StackTrace;
+                return View("Main");
+            }
 
             return View("Yes");
         }
