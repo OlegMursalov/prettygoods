@@ -5,5 +5,18 @@ body {
     background-color: #343a40;
 }
 body .bg-light {
-    background-image: url('../images/hpi4t5luhr1fmalqefso7nh4kf.png');
+    background-image: url('../images/maxresdefault.jpg');
+}
+.form-group {
+    margin-bottom: 5px;
+}
+#xxxxx {
+    padding: 5px 0;
+}
+p.xxc {
+    color: red;
+    font-weight: 700;
+    margin: 0;
+    background: bisque;
+    opacity: 0.8;
 }
