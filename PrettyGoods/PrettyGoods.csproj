@@ -118,7 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HappyNewYearController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -129,6 +129,7 @@
     <Content Include="Content\css\site.main.style.css" />
     <Content Include="Content\images\background_heart.png" />
     <Content Include="Content\images\heart %283%29.png" />
+    <Content Include="Content\images\hpi4t5luhr1fmalqefso7nh4kf.png" />
     <Content Include="Content\images\icon.png" />
     <Content Include="Content\images\VKJOa-g5rzc.jpg" />
     <Content Include="Content\js\bootstrap.min.js" />
@@ -145,11 +146,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Test.cshtml" />
-    <Content Include="Views\Home\Win.cshtml" />
+    <Content Include="Views\HappyNewYear\Main.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
